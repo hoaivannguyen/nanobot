@@ -19,3 +19,14 @@ poetry.lock
 .pytest_cache/
 tests/
 botpy.log
+
+# Node.js
+node_modules/
+package-lock.json
+*.log
+
+# Browser data (contains login sessions)
+.browser_data/
+
+# WhatsApp auth (contains credentials)
+whatsapp-auth/
