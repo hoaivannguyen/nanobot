@@ -98,7 +98,7 @@ class AgentLoop:
 
         # Browser automation tool (with persistent session for staying logged in)
         browser_data_dir = self.workspace / ".browser_data"
-        self.tools.register(BrowserTool(headless=True, user_data_dir=str(browser_data_dir)))
+        self.tools.register(BrowserTool(headless=False, user_data_dir=str(browser_data_dir)))
 
         # Message tool
         message_tool = MessageTool(send_callback=self.bus.publish_outbound)
